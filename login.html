@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Mood App</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #000, #4b0082);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+    .login-box {
+      width: 300px;
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(160,108,255,0.7);
+      text-align: center;
+    }
+    h2 { color: #a06cff; margin-bottom: 20px; }
+    input {
+      width: 90%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      text-align: center;
+    }
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #7f00ff, #e100ff);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #00ffa6, #00c8ff);
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Mood App</h2>
+    <input type="text" id="username" placeholder="Masukkan Username"><br>
+    <input type="password" id="password" placeholder="Masukkan Password"><br>
+    <button onclick="login()">Masuk</button>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user === '' || pass === '') {
+        alert('Isi username dan password!');
+      } else {
+        alert('Selamat datang, ' + user + '!');
+        window.location.href = 'index.html';
+      }
+    }
+  </script><script>
+    function login() {
+      const zurax = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (zurax === '' || pass === '') {
+        alert('Isi username dan password!');
+      } else {
+        alert('Selamat datang, ' + zurax + '!');
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+
+</body>
+</html>
